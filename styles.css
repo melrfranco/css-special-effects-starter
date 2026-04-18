@@ -4,19 +4,87 @@
     License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,32 +92,51 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
 /* ----- Global/Custom Styles ----- */
-:root{
+:root {
     /* Colors From Colormind.io */
     --greige: #B6B4A6;
     --cream: #F1E2C0;
@@ -63,12 +150,14 @@ table {
     --lt-gray: #eaeaea;
 
     /* Fonts from Google Fonts, Pairing by FontJoy */
-    --heading-fonts: "Noto Serif", Georgia, serif; /* weights: 100-900,   */
-    --body-fonts: "Martel Sans", Verdana, sans-serif; /* weights:  400, 600, 900 */
+    --heading-fonts: "Noto Serif", Georgia, serif;
+    /* weights: 100-900,   */
+    --body-fonts: "Martel Sans", Verdana, sans-serif;
+    /* weights:  400, 600, 900 */
 }
 
 /* Body Styles */
-body{
+body {
     box-sizing: border-box;
     font-size: 1rem;
     line-height: 1.35;
@@ -113,79 +202,83 @@ body{
 }
 
 /* Header/Main/Footer Styles */
-header, main, footer{
+header,
+main,
+footer {
     margin: 0 auto;
 }
 
-header, footer{
+header,
+footer {
     padding: 2rem 1rem;
     max-width: calc(1280px - 2rem);
     background-color: var(--dk-blue);
     color: var(--cream);
 }
 
-main{
+main {
     background: var(--cream) url("images/exclusive-paper.png");
     max-width: 1280px;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
 /* Container Styles */
-main section{
+main section {
     padding: 2rem;
     width: calc(100% - 4rem);
     max-width: calc(1280px - 4rem);
 }
 
 /* ---------- Link Styles ---------- */
-a{
+a {
     display: block;
     padding: 1rem;
 }
 
-a:hover{
+a:hover {
     text-decoration-color: var(--lt-blue);
 }
 
-a:focus{
+a:focus {
     outline: 4px solid var(--lt-blue);
     outline-offset: 2px;
 }
 
-code a{
+code a {
     color: var(--cream);
     display: inline-block;
 }
 
 /* ---------- Heading Styles ---------- */
-h1, h2{
+h1,
+h2 {
     font-weight: 900;
     font-family: var(--heading-fonts);
     text-align: center;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
     margin: 0.5rem 0;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 2rem;
     margin: 0.75rem 0;
 }
 
 /* ---------- Text Styles ---------- */
-p{
+p {
     padding: 0.5rem 0;
     max-width: 85ch;
     margin: 0 auto;
 }
 
-pre{
+pre {
     background-color: var(--dk-gray);
     padding-left: 0.5rem;
     color: var(--cream);
@@ -195,17 +288,17 @@ pre{
     overflow-x: scroll;
 }
 
-code{
+code {
     font-family: monospace;
 }
 
-p > code{
+p>code {
     color: var(--dk-blue);
     font-weight: 600;
 }
 
 /* Image Styles */
-img{
+img {
     display: block;
     width: 100%;
     max-width: 640px;
@@ -214,7 +307,10 @@ img{
 }
 
 /* Shared Div Full of Other Divs and Inner Div Styles */
-#shadows, #radius, #linear, #radial{
+#shadows,
+#radius,
+#linear,
+#radial {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -225,11 +321,19 @@ img{
     font-weight: 600;
 }
 
-#text, #box, #corners, #image-brdr, #l-gradient, #r-gradient{
+#text,
+#box,
+#corners,
+#image-brdr,
+#l-gradient,
+#r-gradient {
     border-bottom: 16px double var(--dk-blue);
 }
 
-#shadows div, #radius div, #linear div, #radial div{
+#shadows div,
+#radius div,
+#linear div,
+#radial div {
     width: 100px;
     height: 100px;
     background-color: var(--lt-blue);
@@ -239,7 +343,7 @@ img{
 }
 
 /* Text Shadow Section Styles */
-#text span{
+#text span {
     font-size: 2.5rem;
     display: block;
     Text-align: center;
@@ -249,74 +353,75 @@ img{
 
 /* No blur */
 /* This is included as an example and has been completed for you */
-.text-shadow-1{
+.text-shadow-1 {
     text-shadow: -2px 2px var(--lt-blue), -4px 4px var(--dk-blue);
 }
 
 /* With Blur */
 /* This is included as an example and has been completed for you */
-.text-shadow-2{
+.text-shadow-2 {
     text-shadow: -1px 1px var(--lt-blue), -4px 4px 6px var(--greige);
 }
 
 /* TO DO: Add a text shadow here that has a six pixel offset for both x and y, includes a six pixel blur and uses the tan CSS variable color */
-.text-shadow-3{
-    
+.text-shadow-3 {
+    text-shadow: 6px 6px 6px var(--tan);
 }
 
 /* TO DO: Add a text shadow here that has a one pixel offset in the x and y direction, no spread or blur, and uses the light blue variable color */
-.text-shadow-4{
-    
+.text-shadow-4 {
+    text-shadow: 1px 1px 0 var(--lt-blue);
 }
 
 /* Box Shadow Section Styles */
 /* This is included as an example and has been completed for you */
-.shadow1{
+.shadow1 {
     box-shadow: -6px 6px 10px 10px var(--dk-gray);
 }
 
 /* TO DO: Add a box shadow to this element with a three pixel offset in the x and y direction, no spread or blur, that uses the tan CSS variable color */
-.shadow2{
-    
+.shadow2 {
+    box-shadow: 3px 3px 0 var(--tan);
 }
 
 /* This is included as an example and has been completed for you */
-.shadow3{
+.shadow3 {
     border-radius: 1rem 0;
     box-shadow: 6px 6px var(--dk-blue), -6px -6px var(--med-gray);
 }
 
 /* TO DO: Add a box shadow here that uses zero as the x-offset, y-offset, and blur, has a 6 pixel spread and uses the dark blue variable color, then add a second box shadow to the list that uses the same values for its first three settings, has a twelve pixel spread, and uses the medium gray CSS color variable */
-.shadow4{
+.shadow4 {
     border-radius: 50%;
-    
+    box-shadow: 0 0 0 6px var(--dk-blue), 0 0 0 12px var(--med-gray);
+
 }
 
 /* Border Radius Section Styles */
 /* TO DO: Add a ten pixel border radius to all sides of this element */
-.corner1{
-    
+.corner1 {
+    border-radius: 10px;
 }
 
 /* TO DO: Add a ten pixel border radius to the top left and bottom right corners, and a twenty pixel border radius to the top right and bottom left corners of this element */
-.corner2{
-    
+.corner2 {
+    border-radius: 10px 20px 10px 20px;
 }
 
 /* TO DO: Add a ten pixel border radius to the top left corner, a twenty pixel border radius to the top right and bottom left corners, and a fifteen pixel border radius to the bottom right corner */
-.corner3{
-    
+.corner3 {
+    border-radius: 10px 20px 15px 20px;
 }
 
 /* TO DO: Add the following border radius settings to each of the four corners of this element, starting with the upper-left hand corner and moving clockwise: ten pixels, five pixels, fifteen pixels, and twenty pixels */
-.corner4{
-    
+.corner4 {
+    border-radius: 10px 5px 15px 20px;
 }
 
 /* Border Image Section Styles */
 /* Find help creating these on https://border-image.com/ */
 /* This has been included as an example for you */
-.border-img1{
+.border-img1 {
     width: calc(100% - 90px);
     max-width: calc(640px - 90px);
     border-style: solid;
@@ -328,35 +433,39 @@ img{
 }
 
 /* TO DO: Add a border image that uses the "frame-2" image, followed by the values 250 200 250 200 stretch stretch. The border width property should also be set to the following: 40px 32px 40px 32px. You should also include the vendor prefixes and settings, using the example above to help */
-.border-img2{
+.border-img2 {
     width: calc(100% - 90px);
     max-width: calc(640px - 90px);
     border-style: solid;
+    border-width: 40px 32px 40px 32px;
+    -webkit-border-image: url("frame-2.png") 250 200 250 200 stretch stretch;
+    -o-border-image: url("frame-2.png") 250 200 250 200 stretch stretch;
+    border-image: url("frame-2.png") 250 200 250 200 stretch stretch;
 }
 
 /* Linear Gradient Section Styles */
 /* Customize your own gradients on https://cssgradient.io/ or https://gradient.style/ */
 /* These gradients have been included for you to use as examples. All were created on the two sites linked above */
-#linear div{
+#linear div {
     border: 2px solid var(--dk-gray);
 }
 
-.linear1{
+.linear1 {
     background: var(--dk-blue);
     background: linear-gradient(0deg, var(--dk-blue) 0%, var(--lt-blue) 36%, var(--cream) 100%);
 }
 
-.linear2{
+.linear2 {
     background: var(--dk-blue);
     background: linear-gradient(150deg, var(--dk-blue) 0%, var(--lt-blue) 36%, var(--cream) 100%);
 }
 
-.linear3{
+.linear3 {
     background: var(--dk-blue);
     background: linear-gradient(325deg, var(--dk-blue) 0%, var(--lt-blue) 36%, var(--greige) 67%, var(--cream) 100%);
 }
 
-.linear4{
+.linear4 {
     background: var(--dk-blue);
     background: linear-gradient(180deg, var(--dk-blue) 0%, var(--lt-blue) 36%, var(--greige) 67%, var(--cream) 100%);
 }
@@ -364,36 +473,36 @@ img{
 /* Radial Gradient Section Styles */
 /* Customize your own gradients on https://cssgradient.io/ or https://gradient.style/ */
 /* These gradients have been included for you to use as examples. All were created on the two sites linked above */
-#radial div{
+#radial div {
     border: 2px solid var(--dk-gray);
 }
 
-.radial1{
+.radial1 {
     color: var(--cream);
     background: var(--dk-blue);
     background: radial-gradient(circle, var(--dk-blue) 0%, var(--lt-blue) 36%, var(--greige) 67%, var(--cream) 100%);
 }
 
-.radial2{
+.radial2 {
     background: var(--dk-blue);
     background-image: radial-gradient(farthest-corner circle at 50% 100%, var(--lt-blue) 0%, var(--cream) 100%);
 }
 
-.radial3{
+.radial3 {
     color: var(--cream);
     background: var(--dk-blue);
     background-image: radial-gradient(farthest-corner circle at 100% 0%, var(--cream) 0%, var(--dk-blue) 0% 20%, var(--cream) 0% 40%, var(--dk-blue) 0% 60%, var(--cream) 0% 80%, var(--dk-blue) 0% 100%);
 }
 
-#radial .radial4{
+#radial .radial4 {
     color: var(--cream);
     background: var(--dk-blue);
-    background-image: 
-    radial-gradient(farthest-corner circle at 87% 49%, #2e7ab3 0%, 10%, #266394 0% 0%, 26%, #1c4f75 0% 0%, 46%, #0d2436 0% 0%, 72%, #143b54 0% 0%);
+    background-image:
+        radial-gradient(farthest-corner circle at 87% 49%, #2e7ab3 0%, 10%, #266394 0% 0%, 26%, #1c4f75 0% 0%, 46%, #0d2436 0% 0%, 72%, #143b54 0% 0%);
 }
 
 /* Filter Section Styles */
-#filter figure{
+#filter figure {
     padding: 1rem;
     border: 2px solid var(--dk-blue);
     width: calc(100% - 2rem);
@@ -402,46 +511,45 @@ img{
     text-align: center;
 }
 
-#filter img{
+#filter img {
     margin: 0;
 }
 
-figcaption{
+figcaption {
     margin-top: 16px;
     font-weight: 700;
     font-size: 1.5rem;
 }
 
 /* TO DO: Add a filter that sets the opacity of this image to 50 percent */
-.filter1{
-    
+.filter1 {
+    filter: opacity(50%);
 }
 
 /* TO DO: Add a filter that adds sepia tone to this image using 80% as the amount to add */
-.filter2{
-    
+.filter2 {
+    filter: sepia(80%);
 }
 
-/* TO DO: Add a filter that blurs this image by five pixels */
-.filter3{
-    
+.filter3 {
+    filter: blur(5px);
 }
 
 /* TO DO: Add a filter here to increase saturation by 200% */
-.filter4{
-    
+.filter4 {
+    filter: saturate(200%);
 }
 
 /* TO DO: Add a filter here to add a drop shadow to this element with a negative three pixel x offset, a 3 pixel y offset, five pixels of blur, and uses the medium gray CSS variable */
-.filter5{
-    
+.filter5 {
     max-height: 400px;
+    filter: drop-shadow(-3px 3px 5px var(--med-gray));
 }
 
 /* Media Queries */
-@media screen and (min-width: 650px){
-    
-    #text div{
+@media screen and (min-width: 650px) {
+
+    #text div {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -449,39 +557,51 @@ figcaption{
         margin: 2rem auto;
     }
 
-    #shadows, #radius, #linear, #radial{
+    #shadows,
+    #radius,
+    #linear,
+    #radial {
         max-width: 100%;
     }
 
-    #shadows div, #radius div, #linear div, #radial div{
+    #shadows div,
+    #radius div,
+    #linear div,
+    #radial div {
         width: 175px;
         height: 175px;
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) {
 
-    #text span{
+    #text span {
         font-size: 4rem;
     }
 
-    #shadows, #radius, #linear, #radial{
+    #shadows,
+    #radius,
+    #linear,
+    #radial {
         font-size: 3rem;
         gap: 4rem;
-    }    
+    }
 
-    #shadows div, #radius div, #linear div, #radial div{
+    #shadows div,
+    #radius div,
+    #linear div,
+    #radial div {
         width: 225px;
         height: 225px;
     }
 
-    #image-brdr div{
+    #image-brdr div {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
 
-    #filter div{
+    #filter div {
         width: 100%;
         display: flex;
         gap: 1rem;
@@ -489,7 +609,7 @@ figcaption{
         justify-content: center;
     }
 
-    #filter figure{
+    #filter figure {
         max-width: calc(48% - 2rem);
     }
 }
